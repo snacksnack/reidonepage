@@ -10,13 +10,12 @@ body {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-
-.vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+  }
 }
 
 /* Side Menu */
@@ -44,43 +43,37 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-.sidebar-nav li {
-  line-height: 40px;
-  text-indent: 20px;
-}
-
-.sidebar-nav li a {
-  color: #999999;
-  display: block;
-  text-decoration: none;
-}
-
-.sidebar-nav li a:hover {
-  color: #fff;
-  background: rgba(255,255,255,0.2);
-  text-decoration: none;
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
+  li {
+    line-height: 40px;
+    text-indent: 20px;
+    a {
+      color: #999999;
+      display: block;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+        background: rgba(255,255,255,0.2);
+        text-decoration: none;
+      }
+      &:active, &:focus {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .sidebar-nav > .sidebar-brand {
   height: 55px;
   line-height: 55px;
   font-size: 18px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-  color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
+  a {
+    color: #999999;
+    &:hover {
+      color: #fff;
+      background: none;
+    }
+  }
 }
 
 #menu-toggle {
@@ -118,25 +111,25 @@ body {
   background-size: cover;
 }
 
-/* Intro */
+/* Resume */
 
-.intro {
+.resume {
   padding: 50px 0;
 }
 
-/* Services */
+/* Hello */
 
-.services {
+.hello {
   background: #7fbbda;
   padding: 50px 0;
   color: #ffffff;
 }
 
-.service-item {
+.hello-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+i.hello-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
@@ -203,20 +196,28 @@ footer {
 
 .top-scroll {
   margin-top: 50px;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-.top-scroll a {
+/* .top-scroll a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 i.scroll {
   color: #333333;
+  &:hover {
+    color: #0a5175;
+  }
 }
 
-i.scroll:hover {
+/* i.scroll:hover {
   color: #0a5175;
-}
+} */
+
 /* Responsive */
 
 @media (max-width: 768px) {

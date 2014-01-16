@@ -234,9 +234,11 @@ fieldset[disabled] .form-control {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
+
 textarea.form-control {
   height: auto;
 }
+
 .inner-page {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -263,12 +265,14 @@ textarea.form-control {
 
 /* error styling */
 #error_explanation {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   background-color: white;
+  border-radius: 10px;
   color: #f00;
   ul {
     list-style: none;
     margin: 0 0 0 0;
-    padding: 0;
+    padding: 3;
   }
 }
 
@@ -278,10 +282,6 @@ textarea.form-control {
 }
 /* end error styling */
 
-/* .top-scroll a {
-  text-decoration: none;
-  color: inherit;
-} */
 
 i.scroll {
   color: #333333;
@@ -290,9 +290,6 @@ i.scroll {
   }
 }
 
-/* i.scroll:hover {
-  color: #0a5175;
-} */
 
 /* Responsive */
 

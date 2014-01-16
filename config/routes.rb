@@ -1,5 +1,9 @@
 Reidonepage::Application.routes.draw do
+  get "clients/new"
+  resources :clients, only: [:create]
+
   root :to => 'pages#hello'
+  match '/resume_pdf', to: redirect('/reidcollins.pdf')
   #get "pages/hello"
 
   # The priority is based upon order of creation:

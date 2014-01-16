@@ -8,8 +8,8 @@
     <li><a href="#top">Home</a></li>
     <li><a href="#hello">Hello</a></li>
     <li><a href="#resume">Resume</a></li>
-    <!-- <li><a href="#portfolio">Portfolio</a></li> -->
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#social">Social</a></li>
   </ul>
 </div>
 <!-- /Side Menu -->
@@ -66,13 +66,11 @@
           Puppet<br>
         </div>
       </div>
-      <!-- <div class="col-md-2 text-center">
-        <div class="hello-item">
-          <i class="hello-icon fa fa-pencil"></i>
-          <h4>Pencil Sharpening</h4>
-          <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
-        </div>
-      </div> -->
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center hello-item">
+        <a href="#resume" class="btn btn-default btn-lg">resume</a>
+      </div>
     </div>
   </div>
 </div>
@@ -81,106 +79,328 @@
 <!-- Resume -->
 <div id="resume" class="resume">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h2>more testing</h2>
-        <p class="lead">a little bit more testing: <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+    <div class="platform">
+      <div class="resume_header">
+        <div class="row">   
+          <div class="col-md-2">
+            <%= image_tag('reid_diabeacon.jpg', class: "image-polaroid")%>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="name-text">Reid Collins</div>
+            <div class="major-text"><i>Software Developer</i></div>            
+          </div>
+
+          <div class="col-md-4 pull-right">
+            <address class="margin-bottom-5">
+              118 Greenpoint Ave.<br>
+              Brooklyn, NY 11222
+            </address>              
+          
+            <abbr rel="tooltip" data-original-title="Phone">P</abbr>:&nbsp;&nbsp;
+              <a href="tel:646-250-2869">646-250-2869</a><br>
+            <abbr rel="tooltip" data-original-title="Email">E</abbr>:&nbsp;&nbsp;
+              <a href="mailto:hihelloreid-resume@gmail.com">hihelloreid-resume@gmail.com</a><br>
+            <abbr rel="tooltip" data-original-title="Web">W</abbr>:&nbsp;&nbsp;
+              <a href="http://www.hihelloreid.com" target="_blank">www.hihelloreid.com</a><br>
+
+            <ul class="list-inline">
+              <li>
+                <%= link_to "<i class='fa fa-github'></i>".html_safe,
+                 'https://www.github.com/reidcollins', target: "_blank", title: "Github", rel: "tooltip" %>
+              <li>
+                <%= link_to "<i class='fa fa-linkedin'></i>".html_safe,
+                 'http://www.linkedin.com/profile/view?id=74707895', target: "_blank", title: "Linkedin", rel: "tooltip" %>
+              </li>
+              <li>
+                <%= link_to "<i class='fa fa-facebook'></i>".html_safe,
+                 'https://www.facebook.com/reid.collins.73', target: "_blank", title: "Facebook", rel: "tooltip" %>
+              </li>
+              <li>
+                <%= link_to "<i class='fa fa-twitter'></i>".html_safe,
+                 'https://twitter.com/helloreid', target: "_blank", title: "Twitter", rel: "tooltip" %>
+              </li>
+            </ul>
+
+            <ul class="list-inline">
+              <li>
+                <%= link_to "<i class='fa fa-download'></i>".html_safe,
+                 '/resume/reidcollins.pdf', title: "Download PDF", rel: "tooltip" %>
+              </li>
+              <li>
+                <%= link_to "<i class='fa fa-cloud-download'></i>".html_safe,
+                 '/resume/reidcollins.doc', title: "Download DOC", rel: "tooltip" %>
+              </li>
+            </ul>
+
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div class="resume_main">    
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Objective</b>
+          </div>
+              
+          <div class="col-md-10 pull-right">
+            I am a skilled software developer that equally enjoys writing efficient code and interacting with clients/stakeholders to build a better product. I have extensive development experience in an open source Agile environment, processing large data volumes, implementing new web applications, and managing client accounts.
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Languages</b>
+          </div>
+          <div class="col-md-10 pull-left">
+            Perl, Ruby, bash
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Web Technologies</b>
+          </div>
+          <div class="col-md-10 pull-left">
+            Perl w/ Catalyst, Ruby on Rails, Javascript (jQuery), HTML5/CSS3 (Bootstrap), AJAX, JSON, XML
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Data Storage</b>
+          </div>
+          <div class="col-md-10 pull-left">
+            MySQL, SQL*Loader, Postgres, BerkeleyDB, CDB
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Deployment/Tools</b>
+          </div>
+          <div class="col-md-10 pull-left">
+            Heroku, AWS (EC2 & S3), Git, Subversion, Puppet, tinydns, Bind, pound
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Testing</b>
+          </div>
+          <div class="col-md-10 pull-left">
+            Agile BDD/TDD with Cucumber and RSpec, Test::Unit
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Work Experience</b>
+          </div>
+
+          <div class="col-md-4 pull-left">
+              <div class=""><b>Experian Cheetahmail</b></div>
+              <div class="item-desc">Software Developer: Dev Team</div>
+          </div>  
+            
+          <div class="col-md-2 pull-right">
+            <b>2011 - Present</b>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2 pull-left">
+            <ul>
+              <li>
+                Speed reporting of email marketing campaigns by utilizing SQL*Loader to load high volume ad click/transaction data fles into the database. Critical feature for account teams to speed subsequent campaigns.
+              </li>
+              <li>
+                Implement new social media features in Cheetahmail's web application, allowing clients to synch email marketing campaigns with their Facebook, Pinterest, Twitter, and ShareThis accounts.
+              </li>
+              <li>
+                Develop image rotation tool to accommodate holiday countdown images for Cheetahmail's numerous retail clients. Utilize Time::Local and POSIX modules to allow daily, weekly, or monthly image rotation.
+              </li>
+              <li>
+                Liaise with QA engineers and Release teams to devise tests for software rollouts and fxed bugs when necessary. Assist in diferentiating between code bugs and irregularities in virtual test environments.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 pull-left">
+            <b>Experian Cheetahmail</b><br>
+            <div class="item-desc">Software Developer: Client Dev Team</div>
+          </div> 
+          <div class="col-md-2 pull-right">
+            <b>2008-2011</b>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2 pull-left">
+            <ul>
+              <li> 
+                Design and implement remarketing campaigns for clients. Build automated import processes that parse client datafeeds from Coremetrics, Google Analytics, and Omniture to capture abandoned cart users, browsing customers, etc...
+              </li>
+              <li>
+                Build automated process to convert customer's nightly inventory feeds from text or XML fles into a usable CDB or BerkeleyDB. Contents of these databases could then be dynamically inserted into mailing content via Cheetahmail API.
+              </li>
+              <li>
+                Create automated scrubbing process, cleaning incoming data fles against know spam traps, role addresses, and abuse addresses
+              </li>
+              <li>
+                Integration of client data imports/exports. Work closely with clients to design and implement customized solutions, aggregating performance metrics on a daily, weekly, monthly, or quarterly basis to synch with client or 3rd party database.
+              </li>
+              <li>
+                Attend sales calls to explain complex technical/issues to prospective clients. Onboard new clients and assist with the integration of Cheetahmail's API suite.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 pull-left">
+            <b>Experian Cheetahmail</b><br>
+            <div class="item-desc">Software Engineer: Operations Team</div>
+          </div> 
+          <div class="col-md-2 pull-right">
+            <b>2005-2008</b>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2 pull-left">
+            <ul>
+              <li>
+                24 x 7 application and systems support (rotating on-call schedule). Responsible for supporting 750+ clients. Coordinate emergency outage response/recovery teams. Work with client services and clients to address all application related issues in an expedient manner.
+              </li>
+              <li>
+                Respond to bug reports, providing 1st, 2nd, and 3rd tier support to clients and client services. Provide bug fxes or alternative solutions for clients highly sensitive to revenue loss.
+              </li>
+              <li>
+                Write one-of scripts to transform incoming client data into a usable format for the Cheetahmail database</li>
+              <li>
+                Analyze and enhance queries for slow mailing campaigns segment counts.
+              </li>
+              <li>
+                Manage dns for 1200 domains delegated to Cheetahmail. Assist client's with confguration and help manage XML framework that centrally builds dns zone fles for distribution across six name servers.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 col-md-offset-2 pull-left">
+            <b>Experian Cheetahmail</b><br>
+            <div class="item-desc">Client Relationship Manager: Client Services Team</div>
+          </div> 
+          <div class="col-md-2 pull-right">
+            <b>2001-2005</b>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2 pull-left">
+            <ul>
+              <li>
+                Manage 25+ clients from multiple verticals including catalog, fnancial, multi-channel retail, publishing, telecommunications, and travel.
+              </li>
+              <li>
+                Manage production and strategy for top clients. Coordinate email marketing campaigns with client's other media (television, direct mail, web banner) initiatives.
+              </li>
+              <li>
+                Enhance mailing content to bolster subscriber response, increasing click, open, and transaction rates.
+              </li>
+              <li>
+                Help grow and maintain client subscriber lists by setting up registration forms, e-append, and viral marketing campaigns. Assist client in implementing Cheetahmail form coding to seamlessly capture data from client website.
+              </li>
+              <li>
+                Attend sales calls with Cheetahmail sales team, demonstrating application to clients and felding technical questions. Participate in contract renewals (100% retention rate).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+          <div class="col-md-2 pull-left">
+            <b>Education</b>
+          </div>
+          <div class="col-md-8 pull-left">
+            Bachelor of Arts, Tulane University, 05/1998<br>
+            Major: International Relations
+          </div>
+          <div class="col-md-2 pull-right">
+            <a href="#resume"><i class='fa fa-arrow-up'></i></a>
+          </div>
+        </div>
+      </div> <!-- /main -->
+    </div> <!-- /container -->    
   </div>
 </div>
 <!-- /Resume -->
 
-
-
-<!-- Callout -->
-<div class="callout">
-  <div class="vert-text">
-    <h1>text area with background image: test test</h1>
+<!-- ContactForm -->
+<div id="contact" class="page hello">
+  <div class="inner-page">
+    <h2 class="page-headline">Get in touch and stay updated</h2>
   </div>
-</div>
-<!-- /Callout -->
-
-<!-- Portfolio
-<div id="portfolio" class="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4 text-center">
-        <h2>place holder for projects</h2>
-        <hr>
+  
+  <div class="row inner-page contact">
+    <div class="col-md-6 col-md-offset-1">
+      <%= form_for @client, html: { id: 'contact-form' } do |f| %>
+      <div class="form-group">
+        <%= f.text_area :message, rows: 6, class: "form-control", placeholder: "how can i help you?" %>
+        <%= f.text_field :email, class: "form-control", placeholder: "you@email.com" %>
+        <%= f.text_field :fname, class: "form-control", placeholder: "first name" %>
+        <%= f.text_field :lname, class: "form-control", placeholder: "last name" %>
+        <%= f.text_field :phone, class: "form-control", placeholder: "phone" %>
+        <%= f.text_field :url,   class: "form-control", placeholder: "website" %>
+        <%= f.submit "message me!", class: "btn btn-primary btn-centered" %>
+        <%= render 'shared/error_messages', object: @client %>
+      <% end %>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 col-md-offset-2 text-center">
-        <div class="portfolio-item">
-          <%= image_tag('portfolio-1.jpg') %>
-          <h4>image test 1</h4>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="portfolio-item">
-          <%= image_tag('portfolio-2.jpg') %>
-          <h4>image test 2</h4>
-        </div>
-      </div>
+    <div class="col-md-5 pull-left">
+      <!-- <img src="envelope.jpg"> -->
+      <%= image_tag('russia_envelope_smaller.jpg', class: "image-rounded") %> 
     </div>
-    <div class="row">
-      <div class="col-md-4 col-md-offset-2 text-center">
-        <div class="portfolio-item">
-          <%= image_tag('portfolio-3.jpg') %>
-          <h4>image test 3</h4>
-        </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="portfolio-item">
-          <%= image_tag('portfolio-4.jpg') %>
-          <h4>image test 4</h4>
-        </div>
-      </div>
     </div>
   </div>
 </div>
-Portfolio -->
 
 
-<!-- Call to Action -->
-<div class="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <h3>button prototype test</h3>
-        <a href="#" class="btn btn-lg btn-default">Click Me!</a>
-        <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Call to Action -->
-
-<!-- Map -->
-<div id="contact" class="map">
-  <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=118+Greenpoint+Avenue+Apt.+2B+11222&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=0.357122,0.641327&amp;ie=UTF8&amp;hq=&amp;hnear=118+Greenpoint+Ave,+Brooklyn,+Kings,+New+York+11222&amp;t=m&amp;ll=40.729795,-73.956013&amp;spn=0.015578,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=118+Greenpoint+Avenue+Apt.+2B+11222&amp;aq=&amp;sll=40.697488,-73.979681&amp;sspn=0.357122,0.641327&amp;ie=UTF8&amp;hq=&amp;hnear=118+Greenpoint+Ave,+Brooklyn,+Kings,+New+York+11222&amp;t=m&amp;ll=40.729795,-73.956013&amp;spn=0.015578,0.027466&amp;z=15&amp;iwloc=A" style="color:#0000FF;text-align:left"></a></small>
-</div>
-<!-- /Map -->
 
 <!-- Footer -->
 <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 text-center">
-        <ul class="list-inline">
-          <li><a href="https://www.facebook.com/reid.collins.73"><i class="fa fa-facebook fa-3x"></i></a></li>
-          <li><a href="https://twitter.com/helloreid"><i class="fa fa-twitter fa-3x"></i></a></li>
-          <li><a href="http://www.linkedin.com/profile/view?id=74707895"><i class="fa fa-linkedin fa-3x"></i></a></li>
-          <li><a href="https://github.com/reidcollins"><i class="fa fa-github fa-3x"></i></a></li>
-        </ul>
-        <div class="top-scroll">
-          <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
-        </div>
-        <hr>
-        <p>&copy; hihelloreid llc 2013</p>
-      </div>
+<div id="social" class="container">
+  <div class="row text-center">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <ul class="list-inline">
+        <li>
+          <%= link_to "<i class='fa fa-github fa-3x'></i>".html_safe,
+           'https://www.github.com/reidcollins', target: "_blank", title: "Github", rel: "tooltip" %>
+        <li>
+          <%= link_to "<i class='fa fa-linkedin fa-3x'></i>".html_safe,
+           'http://www.linkedin.com/profile/view?id=74707895', target: "_blank", title: "Linkedin", rel: "tooltip" %>
+        </li>
+        <li>
+          <%= link_to "<i class='fa fa-facebook fa-3x'></i>".html_safe,
+           'https://www.facebook.com/reid.collins.73', target: "_blank", title: "Facebook", rel: "tooltip" %>
+        </li>
+        <li>
+          <%= link_to "<i class='fa fa-twitter fa-3x'></i>".html_safe,
+           'https://twitter.com/helloreid', target: "_blank", title: "Twitter", rel: "tooltip" %>
+        </li>
+      </ul>
+      <p>&copy; hihelloreid llc 2013</p>
     </div>
   </div>
+</div>
 </footer>
-<!-- /Footer -->

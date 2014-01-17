@@ -1,15 +1,13 @@
-<% if object.errors.any? %>
+<% if target.errors.any? %>
   <div id="error_explanation">
-    
-    <div class="alert alert-danger">
-      The form contains <%= pluralize(object.errors.count, "error") %>.
+    <div class="alert alert-error">
+      Oops, it looks like we have <%= pluralize(target.errors.count, "error") %>:
     </div>
-    
     <ul>
-      <% object.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+      <% target.errors.full_messages.each do |msg| %>
+        <li><%= msg %>!</li>
       <% end %>                
     </ul>
-  
   </div>
 <% end %>
+

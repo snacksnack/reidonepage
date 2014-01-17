@@ -349,25 +349,25 @@
 <!-- ContactForm -->
 <div id="contact" class="page hello">
   <div class="inner-page">
-    <h2 class="page-headline">Get in touch and stay updated</h2>
+    <h2 class="page-headline">Let's connect!</h2>
   </div>
   
   <div class="row inner-page contact">
     <div class="col-md-6 col-md-offset-1">
-      <%= form_for @client, html: { id: 'contact-form' } do |f| %>
       <div class="form-group">
-        <%= f.text_area :message, rows: 6, class: "form-control", placeholder: "how can i help you?" %>
-        <%= f.text_field :email, class: "form-control", placeholder: "you@email.com" %>
-        <%= f.text_field :fname, class: "form-control", placeholder: "first name" %>
-        <%= f.text_field :lname, class: "form-control", placeholder: "last name" %>
-        <%= f.text_field :phone, class: "form-control", placeholder: "phone" %>
-        <%= f.text_field :url,   class: "form-control", placeholder: "website" %>
-        <%= f.submit "message me!", class: "btn btn-primary btn-centered" %>
-        <%= render 'shared/error_messages', object: @client %>
-      <% end %>
+        <%= form_for @client, remote: true, :'data-update-target' => "client_update", html: { id: 'contact-form' } do |f| %>
+          <%= f.text_area :message, rows: 6, class: "form-control", placeholder: "how can i help you?" %>
+          <%= f.text_field :email, class: "form-control", placeholder: "you@email.com" %>
+          <%= f.text_field :fname, class: "form-control", placeholder: "first name" %>
+          <%= f.text_field :lname, class: "form-control", placeholder: "last name" %>
+          <%= f.text_field :phone, class: "form-control", placeholder: "phone" %>
+          <%= f.text_field :url,   class: "form-control", placeholder: "website" %>
+          <%= f.submit "message me!", class: "btn btn-primary btn-centered" %>
+          <!%= render 'shared/error_messages', object: @client %>
+        <% end %>
       </div>
     </div>
-    <div class="col-md-5 pull-left">
+    <div class="col-md-5 pull-left" id="form_status">
       <!-- <img src="envelope.jpg"> -->
       <%= image_tag('russia_envelope_smaller.jpg', class: "image-rounded") %> 
     </div>

@@ -7,13 +7,16 @@ class ClientsController < ApplicationController
   def create
   	@client = Client.new(params[:client])
 
-  	if @client.save
-  		flash[:success] = "Thanks for getting in touch! I'll provide feedback soon!"
-  		redirect_to root_path
-  	else
-  		render 'pages/hello'
-  		flash[:notice] = 'notice message notice message'
-  	end
+    respond_to do |format|
+    	if @client.save
+        format.html { redirect_to root_path, flash[:notice] = "Thanks, I'll be in touch shortly!" }
+        format.js
+    	else
+    		flash[:notice] = "Oops. Something's gone wrong!"
+        format.html
+        format.js { }
+    	end
+  end
   	
   end
   

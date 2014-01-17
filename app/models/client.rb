@@ -6,7 +6,8 @@ class Client < ActiveRecord::Base
   VALID_PHONE_NUMBER = /(1)?(?:-)?(?:\(|-)?([\d]{3})(?:\.|\-|\))([\d]{3})(?:\.|\-)([\d]{4})(?: ?x([\d]{3,5}))?/
 
   validates :email, format: { with: VALID_EMAIL_REGEX },
-                    length: { maximum: 100 }
+                    length: { maximum: 100 },
+                    presence: true
   validates :fname, presence: true, length: { maximum: 50 }
   validates :lname, presence: true, length: { maximum: 50 }
   validates :phone, format: { with: VALID_PHONE_NUMBER }

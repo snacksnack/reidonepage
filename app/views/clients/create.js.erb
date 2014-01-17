@@ -1,0 +1,7 @@
+<% if @client.errors.any? %>
+  $("#form_status").html("<%= escape_javascript(render :partial => 'shared/error_messages', :locals => { :target => @client } ) %>");
+<% else %>
+  $("#form_status").html( "<h2>Thanks, I'll be in touch shortly!" );
+  el.find('input:text,textarea').val('');
+  el.find('.validation-errors').empty();
+<% end %>

@@ -1,5 +1,5 @@
 Reidonepage::Application.routes.draw do
-  get "clients/new"
+  #get "clients/new"
   resources :clients, only: [:create]
 
   root :to => 'pages#hello'

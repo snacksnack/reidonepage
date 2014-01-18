@@ -3,6 +3,7 @@ ruby "2.0.0"
 
 gem 'rails', '3.2.14'
 gem 'pg'
+gem 'better_errors'
 gem 'unicorn'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
@@ -19,7 +20,6 @@ group :development do
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork'
   gem 'spork', '0.9.2'
-  gem 'better_errors'
   gem 'binding_of_caller'
 end
 

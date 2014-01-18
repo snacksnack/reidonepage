@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
-gem 'pg'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
@@ -31,6 +30,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 ruby '2.0.0'

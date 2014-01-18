@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
+gem 'pg'
 gem 'unicorn'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
@@ -29,7 +30,6 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 

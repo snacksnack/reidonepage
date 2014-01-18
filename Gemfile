@@ -4,6 +4,7 @@ gem 'rails', '3.2.14'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
+gem 'rails3_serve_static_assets'
 
 
 group :assets do

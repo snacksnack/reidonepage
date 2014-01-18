@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.14'
+gem 'unicorn'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
-gem 'sass-rails',   '~> 3.2.3'
-
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -20,7 +19,6 @@ group :development do
   gem 'spork', '0.9.2'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'pg'
 end
 
 group :test do
@@ -28,15 +26,14 @@ group :test do
   gem 'database_cleaner', '0.7.0'
   gem 'launchy', '2.1.0'
   gem 'rb-fsevent'
-  gem 'pg'
 end
 
 group :production do
-  gem 'rails_12factor'
   gem 'pg'
+  gem 'rails_12factor'
 end
 
-ruby '2.0.0'
+
 
 
 # To use ActiveModel has_secure_password

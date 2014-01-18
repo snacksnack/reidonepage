@@ -276,10 +276,6 @@ textarea.form-control {
   }
 }
 
-.field_with_errors {
-  @extend .control-group;
-  @extend .error;
-}
 /* end error styling */
 
 

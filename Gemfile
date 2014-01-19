@@ -3,8 +3,8 @@ ruby "2.0.0"
 
 gem 'rails', '3.2.14'
 gem 'pg'
+gem 'thin'
 gem 'better_errors'
-gem 'unicorn'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'

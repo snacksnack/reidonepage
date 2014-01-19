@@ -8,7 +8,6 @@ gem 'better_errors'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
-gem 'bcrypt-ruby', '~> 3.0.0'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,7 +16,6 @@ group :assets do
 end
 
 group :development do
-  gem 'pg'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork'

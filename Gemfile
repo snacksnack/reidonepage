@@ -17,6 +17,7 @@ group :assets do
 end
 
 group :development do
+  gem 'pg'
   gem 'rspec-rails', '2.11.0'
   gem 'guard-rspec', '1.2.1'
   gem 'guard-spork'

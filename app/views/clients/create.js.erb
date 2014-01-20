@@ -1,7 +1,5 @@
 <% if @client.errors.any? %>
-  $("#form_status").html("<%= escape_javascript(render :partial => 'shared/error_messages', :locals => { :target => @client } ) %>");
+  $("#form_status").fadeOut(1000,function(){ $(this).html("<%= escape_javascript(render :partial => 'shared/error_messages', :locals => { :target => @client } ) %>").fadeIn(1000); });
 <% else %>
-  $("#form_status").html( "<h2>Thanks, I'll be in touch shortly!" );
-  el.find('input:text,textarea').val('');
-  el.find('.validation-errors').empty();
+  $("#form_status").fadeOut(1000,function(){ $(this).html("<h2>Thanks, I'll be in touch shortly!").fadeIn(1000); });
 <% end %>

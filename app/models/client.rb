@@ -3,7 +3,7 @@ class Client < ActiveRecord::Base
   alias_attribute :new_column_name, :column_name_in_db
 
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  VALID_PHONE_NUMBER = /(1)?(?:-)?(?:\(|-)?([\d]{3})(?:\.|\-|\))([\d]{3})(?:\.|\-)([\d]{4})(?: ?x([\d]{3,5}))?/
+  VALID_PHONE_NUMBER = /(1)?(?:-)?(?:\(|-)?([\d]{3})(?:\.|\-|\)?)([\d]{3})(?:\.|\-)?([\d]{4})(?: ?x([\d]{3,5}))?/
 
   validates :email, format: { with: VALID_EMAIL_REGEX },
                     length: { maximum: 100 },

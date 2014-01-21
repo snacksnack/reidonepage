@@ -8,7 +8,6 @@ gem 'better_errors'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
-gem 'rufus-scheduler'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

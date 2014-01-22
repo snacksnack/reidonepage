@@ -3,10 +3,13 @@ ruby "2.0.0"
 
 gem 'rails'
 gem 'pg'
+gem 'devise'
+gem 'cancan'
 gem 'thin'
 gem 'better_errors'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
+gem 'bootstrap-will_paginate'
 gem 'font-awesome-sass'
 gem 'newrelic_rpm'
 gem 'figaro'

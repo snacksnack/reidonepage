@@ -1,5 +1,12 @@
 class ClientsController < ApplicationController
 
+  before_filter :authenticate_user!, only: [:index, :edit, :update, :destroy]
+
+  def index
+    @clients = Client.paginate(page: params[:page])
+  end
+  
+
   def new
   	@client = Client.new
   end
@@ -18,4 +25,11 @@ class ClientsController < ApplicationController
     	end
     end
   end
+
+  private
+
+  def admin?(user)
+    admin
+  end
+
 end

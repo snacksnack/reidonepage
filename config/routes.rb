@@ -1,7 +1,9 @@
 Reidonepage::Application.routes.draw do
 
+  devise_for :users
+
   root :to => 'pages#hello'
-  resources :clients, only: [:create]
+  resources :clients, only: [:create, :index]
 
   match '/resume_pdf', to: redirect('/reidcollins.pdf')
   match '/resume_doc', to: redirect('/reidcollins.doc')

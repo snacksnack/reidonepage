@@ -1,0 +1,14 @@
+<% provide(:title, 'clients') %>
+
+<div id="hello" class="hello">
+
+  <h1>Contacts:</h1>
+
+  <%= will_paginate %>
+
+  <ul>
+    <%= render @clients %> 
+  </ul>
+
+  <%= will_paginate %>
+</div>

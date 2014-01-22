@@ -13,8 +13,7 @@ class ClientsController < ApplicationController
         format.js
         ClientMailer.client_notice(@client).deliver
     	else
-    		flash[:notice] = "Oops. Something's gone wrong!"
-        format.html
+        format.html { redirect_to root_path, flash[:notice] = "Oops. Something's gone wrong!" }
         format.js { }
     	end
     end

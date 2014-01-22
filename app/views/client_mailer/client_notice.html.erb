@@ -1,11 +1,23 @@
-<p>New Client Contact Notice:</p>
+<!DOCTYPE HTML>
+<html>
 
-<ul>
-  <li>fname: <%= @client.fname %></li>
-  <li>lname: <%= @client.lname %></li>
-  <li>email: <%= @client.email %></li>
-  <li>phone: <%= @client.phone %></li>
-  <li>website: <%= @client.url %></li>
-  <li><br></li>
-  <li>message: <%= @client.message %></li>
-</ul>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+
+  <body class="hello">
+
+    <p>New Client Contact Notice:</p>
+
+    <ul>
+      <li>fname: <%= @client.fname %></li>
+      <li>lname: <%= @client.lname %></li>
+      <li>email: <%= @client.email %></li>
+      <li>phone: <%= @client.phone %></li>
+      <li>website: <%= @client.url %></li>
+      <li><br></li>
+      <li>message: <%= @client.message %></li>
+    </ul>
+
+  </body>
+</html>

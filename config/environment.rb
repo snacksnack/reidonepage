@@ -6,8 +6,8 @@ Reidonepage::Application.initialize!
 
 # ActionMailer points to SendGrid
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'app21355249@heroku.com',
-  :password => 'rk8oqaz9',
+  :user_name => ENV['SENDGRID_USERNAME'],
+  :password => ENV['SENDGRID_PASSWORD'],
   :domain => 'hihelloreid.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,

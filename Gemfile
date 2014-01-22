@@ -9,6 +9,7 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'newrelic_rpm'
+gem 'figaro'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
